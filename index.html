@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>FullScreen Backgrounds - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+    
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>    
+
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
+    <!--SLIDE PRINCIPAL-->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <!---->    
+    
+<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage','5thPage'],
+				menu: '#menuitems'
+			});
+		});
+	</script>
+
+    
+    
+    <!--SLIDER2-->
+    <link rel="stylesheet" href="slider2/css/normalize.css">
+	<link rel="stylesheet" href="slider2/ideal-image-slider.css">
+    <link rel="stylesheet" href="slider2/themes/default/default.css">
+    <style media="screen">
+    #slider2 {
+        margin: 300px auto;
+        
+        
+    }
+        
+    #slider3 {
+        margin: 0 auto;    
+    }
+    
+        #slider4 {
+        margin: 0 auto;    
+    }
+        #slider5 {
+        margin: 0 auto;    
+    }
+        
+        
+    </style>
+    
+<!--HOVER EFFECTS---->
+<script src="js/jquery.hoverGrid.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">  
+    
+    
+   
+</head>
+</html>
+<body>	
+
+    
+    
+    
+
+<!---HEADER---->
+<div id="header">
+
+     <ul id="menuitems">
+        <!--<li><img src="imgs/1.png" width="30" height="30"></li>-->
+     	<li  data-menuanchor="1stPage"><a href="#1stPage">Principal</a></li>
+        <li  data-menuanchor="2ndPage"><a href="#2ndPage">Localizacion</a></li>
+        <li  data-menuanchor="3rdPage"><a href="#3rdPage">Sitios</a></li>
+        <li  data-menuanchor="4thPage"><a href="#4thPage">Galería</a></li>
+        <li  data-menuanchor="5thPage"><a href="#5thPage">Estilos</a></li>
+        <li  data-menuanchor="5thPage"><a href="#5thPage">hola 5</a></li>
+     </ul>
+   </div> 
+<!---FIN HEADER--->
+    
+<!----DIV PARA PAGINAR EL SCROOLBAR----> 
+<div id="fullpage">    
+    
+    
+    <!--SECCION1----->
+ 		<div id="section1" class="section">
+    
+            <!---SLIDESHOW-->
+                <ul class="cb-slideshow">
+                    <li><span>Image 01</span><div><h3>Hotel Villamadrid</h3></div></li>
+                    <li><span>Image 02</span><div><h3 style="font-size: 120px;">NOCHE 4 ESTRELLAS</h3></div></li>
+                    
+                    <li><span>Image 03</span><div><h3 style="font-size: 120px;">Encuentros con el Baile</h3></div></li>
+                    <!--
+                    <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
+                    <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
+                    <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>-->
+                </ul>
+            <!--FIN SLIDESHOW----->
+   
+        </div>
+    <!--FIN SECCION1-->
+ 
+        <div id="section2" class="section">
+       		<div class="slide" id="slide1"> Slide 1 </div>
+   			<div class="slide" id="slide2"> Slide 2 </div>
+    		<div class="slide" id="slide3"> Slide 3 </div>
+   			<div class="slide" id="slide4"> Slide 4 </div>
+            <div class="slide" id="slide5"> Slide 5 </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+        <div id="section3" class="section">
+            
+            <div id="section3_1a">
+                 
+                <div id="slider2">
+                    <!--<img src="slider2/img/1.jpg" data-src-2x="slider2/img/1@2x.jpg" alt="Slide 1" />
+                    <img data-src="slider2/img/2.jpg" data-src-2x="slider2/img/2@2x.jpg" src="" alt="Slide 2" />
+                    <a href="http://example.com"><img data-src="slider2/img/3.jpg" data-src-2x="slider2/img/3@2x.jpg" src="" alt="Slide 3" /></a>
+                    <img data-src="slider2/img/4.jpg" data-src-2x="slider2/img/4@2x.jpg" src="" alt="Slide 4" />-->
+                    <img src="imgs/villa3.png" data-src-2x="slider2/imgs/1@2x.jpg" alt="Slide 1" />
+                    <img data-src="imgs/tropicalhousebig2.jpg" data-src-2x="slider2/imgs/2@2x.jpg" src="" alt="Slide 2" />
+                    <a href="http://example.com"><img data-src="imgs/azucar_salsa_disco.png" data-src-2x="slider2/img/3@2x.jpg" src="" alt="Slide 3" /></a>
+                    <img data-src="imgs/comercial_la_habana_fondo2.png" data-src-2x="slider2/imgs/4@2x.jpg" src="" alt="Slide 4" />
+                </div>     
+                 
+             </div>
+        
+            
+            
+            
+            
+            
+            
+           <div id="section3_2a" >
+                
+               
+               <div id="primera" > 
+                   <div id="slider3">
+                    <img src="imgs/first_base.png"  data-src-2x="slider2/img/1@2x.jpg" alt="Slide 1" />
+                    <img data-src="imgs/villa3.png" data-src-2x="slider2/img/2@2x.jpg" 
+                         src="" alt="Slide 2" />
+                    <img data-src="imgs/comercial_la_habana_fondo2.png" data-src-2x="slider2/img/3@2x.jpg" 
+                         src="" alt="Slide 3" />
+                    <img data-src="imgs/tropicalhousebig2.jpg" data-src-2x="slider2/img/4@2x.jpg" 
+                         src="" alt="Slide 4" />
+                </div>    
+                    
+               </div>
+               
+               
+               
+               
+               
+               <div id="segunda">
+                   <div id="slider4">
+                    <img src="imgs/azucar_salsa_disco.png" data-src-2x="slider2/img/1@2x.jpg" alt="Slide 1" />
+                    <img data-src="imgs/tropicalhousebig2.jpg" data-src-2x="slider2/img/2@2x.jpg" 
+                         src="" alt="Slide 2" />
+                    <img data-src="imgs/comercial_la_habana_fondo2.png" data-src-2x="slider2/img/3@2x.jpg" 
+                         src="" alt="Slide 3" />
+                    <img data-src="imgs/the_host.png" data-src-2x="slider2/img/4@2x.jpg" 
+                         src="" alt="Slide 4" />
+                </div>    
+               </div>
+               
+                <div id="tercera" >
+                    <div id="slider5">
+                    <img src="imgs/first_base.png" data-src-2x="slider2/img/1@2x.jpg" alt="Slide 1" />
+                    <img data-src="imgs/the_host.png" data-src-2x="slider2/img/2@2x.jpg" 
+                         src="" alt="Slide 2" />
+                    <img data-src="imgs/azucar_salsa_disco.png" data-src-2x="slider2/img/3@2x.jpg" 
+                         src="" alt="Slide 3" />
+                    <img data-src="imgs/villa3.png" data-src-2x="slider2/img/4@2x.jpg" 
+                         src="" alt="Slide 4" />
+                </div>    
+               </div>
+            </div>
+        
+     
+    
+        </div><!--SECTION3-->
+       
+        <div id="section4" class="section">
+        
+             
+            <div id="section4_2a" >
+                
+                
+                <div id="primera_dos" >
+                         
+        <div class="thumbnail">
+                <div class="caption">
+                    <p>short thumbnail description</p>
+                            <h4>Thumbnail Headline</h4>
+                           
+                             <a href="#" class="button border-fade">Border Fade</a>
+                
+                    <!--<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                    <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>-->
+                </div>
+                <img src="images/1.jpg" alt="..." width="100%" height="100%" >
+            </div>
+                    
+                </div>
+                
+               <div id="segunda_dos">
+
+                  <div class="thumbnail">
+                        <div class="caption">
+                            <p>short thumbnail description</p>
+                            <h4>Thumbnail Headline</h4>
+                           
+                             <a href="#" class="button border-fade">Border Fade</a>
+                
+                            <!--<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>-->
+                        </div>
+                        <img src="images/3.jpg" alt="..." width="100%" height="100%" >
+                    </div>
+                
+                
+                
+                
+                </div>
+                
+                
+                <div id="tercera_dos" >
+                    
+                    
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <p>short thumbnail description</p>
+                            <h4>Thumbnail Headline</h4>
+                           
+                             <a href="#" class="button border-fade">Border Fade</a>
+                
+                            <!--<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>-->
+                        </div>
+                        <img src="images/2.jpg" alt="..." width="100%" height="100%" >
+                    </div>
+                    
+               </div>
+                
+                
+            </div>
+            
+            
+            
+            <div id="section4_1a">
+
+               
+               
+              
+                 
+             </div>
+        
+      
+        
+        </div><!--secetion4-->
+    
+    
+    <div id="section5" class="section">
+        
+            <!-- <div style="width:50%;height:100%;background-color:blue;float: left;">
+             </div>
+            <div style="width:50%;height:100%;background-color:green;float: right;">
+             </div>-->
+        
+         
+                  
+        
+        
+        </div>
+    
+    
+    
+    
+</div>
+    
+    <!--Script Slider-->
+    <script src="slider2/ideal-image-slider.js"></script>
+	<script>
+	var slider = new IdealImageSlider.Slider('#slider2');
+    slider.start();
+	</script>
+    
+     <!--Script Slider-->
+    <script src="slider2/ideal-image-slider.js"></script>
+	<script>
+    var slider = new IdealImageSlider.Slider({
+    selector: '#slider3',effect: 'fade', interval :'6000'});     
+    slider.start();
+	</script>
+    
+     <!--Script Slider-->
+    <script src="slider2/ideal-image-slider.js"></script>
+	<script>
+    var slider = new IdealImageSlider.Slider({
+    selector: '#slider4',effect: 'fade', interval :'9000'});     
+    slider.start();
+	</script>
+    
+     <!--Script Slider-->
+    <script src="slider2/ideal-image-slider.js"></script>
+	<script>
+    var slider = new IdealImageSlider.Slider({
+    selector: '#slider5',effect: 'fade', interval :'4000'});     
+    slider.start();
+	</script>
+   
+    <!--HOVER EFFECTS-->
+<script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#whatever').hoverGrid();
+    });
+</script>
+    
+    
+    
+    <script>
+        $( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
+    </script>
+    
+   <!-- <script>
+    $( document ).ready(function() {
+$("[rel='tooltip']").tooltip();
+
+$('.thumbnail').hover(
+function(){
+$(this).find('.caption').slideDown(300); //.fadeIn(250)
+},
+function(){
+$(this).find('.caption').slideUp(300,function(){$ (this).stop( true, true )}); //.fadeOut(205) and stop hover
+}
+); 
+});
+    </script>-->
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+ 
+
+  <title>Simple Parallax Scrolling Effect</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="css/base_contactos.css">
+  <link rel="stylesheet" href="css/style_contactos.css">
+
+    
+<link rel="stylesheet" href="css/animate.css">
+
+  <!-- js -->
+  <script src="js/modernizr_sitios.js"></script>
+    
+<!--Scroll smooth-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/core.js"></script>
+
+    <!--EFFECT scroll landing-->
+    <script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+
+    
+    
+    
+</head>
+
+<body>
+    
+   
+    
+<!--HEADER-->
+<div id="header" style="z-index:1">
+
+     <ul id="menuitems">
+        <li><img src="imgs/1.png" width="30" height="30"></li>
+     	<li ><a href="#villamadrid">Principal</a></li>
+        <li><a href="#tropical_house">Localizacion</a></li>
+        <li><a href="#azucar">Sitios</a></li>
+        <li><a href="#comercial_la_habana">Galería</a></li>
+        <li><a href="#fist_base">Estilos</a></li>
+        <li><a href="#the_host">hola 5</a></li>
+     </ul>
+   </div> 
+<!--FIN HEADER-->
+    
+
+    <!--dibuja google maps-->
+    <div id="googlemaps"></div>
+
+        <div id="contactform">
+
+          <p style="text-align:center"><img src="imgs/hotel-villmadrid.jpg"></p>
+          <div id="direc_hora" >
+            <strong>Dirección:</strong> Calle Xaudaró, 2, Madrid<br>
+            <strong>Horarios:</strong> Lunes 19:00-21:00 Miercoles 21:00-23:00
+          </div>
+          <div id="desc">
+            <p>Desde hace 10 años este hotel se ha dedicado a promover los bailes de salón dándonos una propuesta entre semana para los amantes del baile.
+            Impartiendo todo tipo de clases de baile de salón,desde la salsa hasta el tango,con un gran ambiente y además guiado por los profesores de Encuentros con el baile.
+            </p>
+
+        </div>
+
+
+
+     <div id="enlaces">
+
+        <ul style=" display: inline-block;">
+          <li style=" display: inline-block;">
+            <div id="cf">
+             <img class="bottom" src="imgs/icons/facebook_hover_white.png" width="48" height="48"  />
+             <img class="top" src="imgs/icons/facebook_hover_white.png" width="48" height="48"  />
+            </div>
+          </li>
+
+          <li style=" display: inline-block;">
+            <div id="cf">
+              <img class="bottom" src="imgs/icons/twitter_hover.png" width="48" height="48"  />
+              <img class="top" src="imgs/icons/twitter_hover_white.png" width="48" height="48"  />
+            </div>
+          </li>
+
+          <li style=" display: inline-block;">
+            <div id="cf">
+             <img class="bottom" src="imgs/icons/instagram_hover.png" width="48" height="48"  />
+             <img class="top" src="imgs/icons/instagram_hover_white.png" width="48" height="48"  />
+          </div>
+          </li>
+
+          <li style=" display:inline-block;">
+            <div id="cf">
+             <img class="bottom" src="imgs/icons/google_hover.png" width="48" height="48"  />
+             <img class="top" src="imgs/icons/google_hover_white.png" width="48" height="48"  />
+          </div>
+        
+          </li>
+        </ul>
+        </div>
+
+
+</div><!--contact-form-->
+
+
+<style>
+
+#cf {
+  height:48px;
+  width:48px;
+}
+
+#cf img {
+  position:absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+
+#enlaces{
+  margin:10px auto;
+  text-align: left;
+  width: 50%;
+}
+#enlaces ul{
+position: relative;
+}
+
+#enlaces li{
+  display: inline-block;
+padding: 5px;
+}
+
+
+
+
+</style>
+
+
+
+
+
+<!-- Include the Google Maps API library - required for embedding maps -->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ 
+<script type="text/javascript">
+// The latitude and longitude of your business / place
+var position = [40.490080, -3.697793]; 
+var position2 = [40.489453, -3.689479]; 
+function showGoogleMaps() {
+    var latLng = new google.maps.LatLng(position[0], position[1]);
+     var latLng2 = new google.maps.LatLng(position2[0], position2[1]);
+
+
+var infowindow = new google.maps.InfoWindow({
+    content: "<strong>Hotel Villamadrid</strong> </br>"+
+    "Calle Xaudaró, 2, Madrid"
+});
+
+
+    var mapOptions = {
+        zoom: 16, // initialize zoom level - the max value is 21
+        streetViewControl: false, // hide the yellow Street View pegman
+        scaleControl: true, // allow users to zoom the Google Map
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: latLng
+    };
+
+
+  
+
+    map = new google.maps.Map(document.getElementById('googlemaps'),
+        mapOptions);
+    // Show the default red marker at the location
+    marker = new google.maps.Marker({
+        position: latLng2,
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.DROP
+    });
+
+
+infowindow.open(map, marker);
+
+}
+
+
+
+
+
+google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ads -->
+<script src="js/fusionad_sitios.js"></script>
+
+<!-- analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34160351-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+    
+
+</body>
+</html>

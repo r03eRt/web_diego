@@ -1,0 +1,232 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../css/fonts/roboto_light_spanish/Roboto-Light-webfont.eot');
+    src: url('../css/fonts/roboto_light_spanish/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/roboto_light_spanish/Roboto-Light-webfont.woff') format('woff'),
+         url('../css/fonts/roboto_light_spanish/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../css/fonts/roboto_light_spanish/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 70px;
+  
+    
+    
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+
+section.module.parallax h1 {
+
+  margin-left: -10%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 270px;/*600*/
+  font-weight: 600;
+  text-align: center;
+    
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /**/  
+}
+
+section.module.parallax h1b {
+
+  margin-left: 15%;/**estao no vale*/
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 120px;
+  line-height: 600px;/*600*/
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: blue; 
+}
+section.module.parallax-1 {
+  background-image: url("../imgs/salsa.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../imgs/bolero.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../imgs/bachata.jpg");
+}
+section.module.parallax-4 {
+  background-image: url("../imgs/comercial_la_habana_fondo2.png");
+   
+}
+section.module.parallax-5 {
+  background-image: url("../imgs/first_base.png");
+}
+section.module.parallax-6 {
+  background-image: url("../imgs/the_host.png");
+}
+
+
+
+
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+  /**  font-family: 'Roboto Black';**/
+    font-size: 56px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+
+/*****MENU ITEM*******/
+
+#menuitems{
+    margin: 0;
+  
+font-family: 'Roboto Light', sans-serif;
+font-size: 20px;
+font-weight: 600;
+    text-align: center;
+}
+ul#menuitems li{
+	display:inline-block;
+	color: #787878;   
+}
+
+
+ul#menuitems li.active{
+	/**background: rgba(0,0,0, 0.5);**/
+	color: #787878;
+   
+   
+    
+
+}
+ul#menuitems li a{
+	color: #787878;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+ul#menuitems li a:after{
+	color: #787878; 
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #787878;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+ul#menuitems li a:hover:after{
+	color: #787878;
+     width: 100%; 
+  left: 0; 
+}
+
+
+ul#menuitems li.active a:hover{
+    
+	
+    
+}
+
+ul#menuitems li a:hover{
+	
+    
+    
+}
+
+ul#menuitems li:hover{
+    color: rgba(255, 255, 255, 0.5);
+   
+
+}
+ul#menuitems li a,
+ul#menuitems li.active a{
+	padding: 9px 18px;
+	display:block;
+    
+}
+ul#menuitems li.active a{
+	
+}
+
+/****HEADER Y FOOTER****/
+#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background-color:white;
+		z-index:9;
+		text-align:center;
+		color: #787878;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+#header-nofix{
+		height: 70px;
+		display:block;
+		width: 100%;
+		background-color:red;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding:0px 0 0 0;
+	}
+
+	#header-nofix{
+		top:0px;
+	}	
+
+
